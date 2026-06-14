@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sania Ahmed | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="click-bubbles.css">
+<link rel="stylesheet" href="secret-dossier.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+<!-- ==========================
+     SOCIAL SIDEBAR
+========================== -->
+
+<div class="social-sidebar">
+
+    <a href="https://www.linkedin.com/in/sania-ahmed-36b557366?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/Sania-Ahmed-cmd" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.instagram.com/hexene_1/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:saniawrk72@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+
+<!-- ==========================
+     HERO SECTION
+========================== -->
+
+<section class="hero">
+
+    <div class="hero-mood" data-comic-mood>
+        <button type="button" class="mood-btn" id="moodBtn" aria-haspopup="dialog" aria-controls="moodModal" aria-expanded="false">
+            Choose Your Mood
+        </button>
+        <div class="mood-label" id="moodLabel">Mood: Surprise</div>
+    </div>
+
+    <img
+        src="assets/hero-image.png"
+        alt="Sania Ahmed"
+        class="hero-bg"
+        id="heroImage"
+    >
+
+    <div class="hero-content">
+
+
+        <div class="issue-tag">
+            ISSUE #000
+        </div>
+
+        <h1>
+            HI! I'M
+            <br>
+            <span>SANIA AHMED</span>
+        </h1>
+
+        <p>
+            Web Designer • Developer • AI/ML
+        </p>
+
+        <button
+            class="comic-btn"
+            onclick="document.querySelector('.about').scrollIntoView({behavior:'smooth'})"
+        >
+            ENTER MY STORY
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     COMIC MOOD MODAL (HERO)
+========================== -->
+
+<div class="mood-modal-overlay" id="moodModal" role="dialog" aria-modal="true" aria-labelledby="moodModalTitle" hidden>
+    <div class="mood-modal" role="document">
+        <div class="mood-modal-header">
+            <div class="mood-modal-title" id="moodModalTitle">SELECT YOUR EMOTION</div>
+            <button type="button" class="mood-modal-close" id="moodCloseBtn" aria-label="Close mood chooser">✕</button>
+        </div>
+        <div class="mood-options" role="list">
+            <button type="button" class="mood-option" data-mood="Surprise" data-hero-src="assets/hero-image.png" role="listitem">
+                <img src="assets/hero-image.png" alt="Surprise" />
+                <span>Surprise</span>
+            </button>
+            <button type="button" class="mood-option" data-mood="Sad" data-hero-src="assets/sad.png" role="listitem">
+                <img src="assets/sad.png" alt="Sad" />
+                <span>Sad</span>
+            </button>
+            <button type="button" class="mood-option" data-mood="Sassy" data-hero-src="assets/sassy.png" role="listitem">
+                <img src="assets/sassy.png" alt="Sassy" />
+                <span>Sassy</span>
+            </button>
+            <button type="button" class="mood-option" data-mood="Smile" data-hero-src="assets/smile.png" role="listitem">
+                <img src="assets/smile.png" alt="Smile" />
+                <span>Smile</span>
+            </button>
+            <button type="button" class="mood-option" data-mood="Wink" data-hero-src="assets/wink.png" role="listitem">
+                <img src="assets/wink.png" alt="Wink" />
+                <span>Wink</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================
+     SECRET DOSSIER SECTION
+========================== -->
+
+
+<section class="secret-dossier reveal-up" id="secret-file-001">
+
+    <div class="dossier-header">
+        <div class="issue-number">FILE #001</div>
+        <div class="classified-stamp">CLASSIFIED</div>
+    </div>
+
+    <h2 class="dossier-title">SECRET FILE #001</h2>
+
+    <p class="dossier-subtitle">
+        SHE IS NOT WHAT YOU THINK SHE IS.
+    </p>
+
+    <div class="dossier-space-filler" aria-hidden="true"></div>
+
+    <div class="dossier-grid">
+        <div class="dossier-card">
+            <div class="dossier-label">Favorite Language</div>
+            <div class="dossier-value">Python</div>
+        </div>
+
+        <div class="dossier-card">
+            <div class="dossier-label">Secret Identity</div>
+            <div class="dossier-value">Author</div>
+        </div>
+
+        <div class="dossier-card">
+            <div class="dossier-label">Weakness</div>
+            <div class="dossier-value">Debugging at 2 AM</div>
+        </div>
+
+        <div class="dossier-card">
+            <div class="dossier-label">Power Source</div>
+            <div class="dossier-value">Coffee</div>
+        </div>
+
+        <div class="dossier-card dossier-full">
+            <div class="dossier-label">Mission</div>
+            <div class="dossier-value">Building AI, Web and Creative Experiences</div>
+        </div>
+
+        <!-- ==========================
+             SYSTEM STATUS (ADDED)
+        ========================== -->
+        <div class="dossier-card dossier-full" id="system-status-card">
+            <div class="dossier-label">SYSTEM STATUS</div>
+
+            <div class="system-status-grid">
+                <div class="system-stat" data-stat-value="97">
+                    <div class="system-stat-header">
+                        <span class="system-stat-name">Design Skills</span>
+                        <span class="system-stat-percent">97%</span>
+                    </div>
+                    <div class="system-progress" aria-hidden="true">
+                        <div class="system-progress-bar" style="--p:97%"></div>
+                    </div>
+                </div>
+
+                <div class="system-stat" data-stat-value="2">
+                    <div class="system-stat-header">
+                        <span class="system-stat-name">Sleep</span>
+                        <span class="system-stat-percent">2%</span>
+                    </div>
+                    <div class="system-progress" aria-hidden="true">
+                        <div class="system-progress-bar" style="--p:2%"></div>
+                    </div>
+                </div>
+
+                <div class="system-stat" data-stat-value="98">
+                    <div class="system-stat-header">
+                        <span class="system-stat-name">Determination</span>
+                        <span class="system-stat-percent">98%</span>
+                    </div>
+                    <div class="system-progress" aria-hidden="true">
+                        <div class="system-progress-bar" style="--p:98%"></div>
+                    </div>
+                </div>
+
+                <div class="system-stat" data-stat-value="1000">
+                    <div class="system-stat-header">
+                        <span class="system-stat-name">Main Character Energy</span>
+                        <span class="system-stat-percent">1000%</span>
+                    </div>
+                    <div class="system-progress" aria-hidden="true">
+                        <div class="system-progress-bar" style="--p:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==========================
+     ABOUT SECTION
+========================== -->
+
+<section class="about">
+
+    <h2>ORIGIN STORY</h2>
+
+
+    <div class="about-grid">
+
+        <div class="about-card" data-origin-arc="designer" role="button" tabindex="0" aria-expanded="false">
+            <div class="click-open-badge" aria-hidden="true">CLICK TO OPEN FILE</div>
+
+            <img src="assets/designer.png" alt="Designer">
+            <h3>The Designer Arc</h3>
+            <p>
+                Creating websites, banners,
+                posters and visual experiences.
+            </p>
+
+            <div class="origin-file" aria-hidden="true">
+                <div class="file-header">
+                    <span class="file-label">CLASSIFIED FILE</span>
+                    <span class="file-issue">FILE: DESIGNER-01</span>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">FUN FACT</div>
+                    <p class="file-text">
+                        Her design sketches start like comic panels-bold frames first, details later.
+                    </p>
+                </div>
+
+                <div class="file-section">
+                   
+                    <p class="file-text">
+                       
+                    </p>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">CHARACTER STATS</div>
+                    <div class="stats-grid">
+                        <div class="stat-chip"><span class="stat-name">CREATIVITY</span><span class="stat-val">92</span></div>
+                        <div class="stat-chip"><span class="stat-name">COLOR SENSE</span><span class="stat-val">88</span></div>
+                        <div class="stat-chip"><span class="stat-name">LAYOUT CONTROL</span><span class="stat-val">95</span></div>
+                        <div class="stat-chip"><span class="stat-name">VISUAL STORY</span><span class="stat-val">90</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card" data-origin-arc="developer" role="button" tabindex="0" aria-expanded="false">
+            <div class="click-open-badge" aria-hidden="true">CLICK TO OPEN FILE</div>
+
+            <img src="assets/developer.png" alt="Developer">
+            <h3>The Developer Arc</h3>
+            <p>
+                Building web apps, software tools, Doing SEO
+                and creating digital solutions.
+            </p>
+
+            <div class="origin-file" aria-hidden="true">
+                <div class="file-header">
+                    <span class="file-label">CLASSIFIED FILE</span>
+                    <span class="file-issue">FILE: DEVELOPER-02</span>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">FUN FACT</div>
+                    <p class="file-text">
+                        She debug(s) like a detective: reproduce → trace → eliminate → victory.
+                    </p>
+                </div>
+
+                <div class="file-section">
+                   
+                    <p class="file-text">
+                       
+                    </p>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">TECH & STATS</div>
+                    <div class="stats-grid">
+                        <div class="stat-chip"><span class="stat-name">CODE CRAFT</span><span class="stat-val">94</span></div>
+                        <div class="stat-chip"><span class="stat-name">DEBUG POWER</span><span class="stat-val">89</span></div>
+                        <div class="stat-chip"><span class="stat-name">PERFORMANCE</span><span class="stat-val">86</span></div>
+                        <div class="stat-chip"><span class="stat-name">STACK MASTER</span><span class="stat-val">91</span></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card" data-origin-arc="ai" role="button" tabindex="0" aria-expanded="false">
+            <div class="click-open-badge" aria-hidden="true">CLICK TO OPEN FILE</div>
+
+            <img src="assets/ai.png" alt="AI">
+            <h3>The AI Arc</h3>
+            <p>
+                Exploring Machine Learning,
+                AI and future technologies.
+            </p>
+
+            <div class="origin-file" aria-hidden="true">
+                <div class="file-header">
+                    <span class="file-label">CLASSIFIED FILE</span>
+                    <span class="file-issue">FILE: AI-03</span>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">FUN FACT</div>
+                    <p class="file-text">
+                        Her AI experiments start with one question: “What if we tried it differently?”
+                    </p>
+                </div>
+
+                <div class="file-section">
+                   
+                    <p class="file-text">
+                      
+                    </p>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">CHARACTER STATS</div>
+                    <div class="stats-grid">
+                        <div class="stat-chip"><span class="stat-name">CURIOSITY</span><span class="stat-val">96</span></div>
+                        <div class="stat-chip"><span class="stat-name">MODEL TINKER</span><span class="stat-val">90</span></div>
+                        <div class="stat-chip"><span class="stat-name">DATA HUNGER</span><span class="stat-val">87</span></div>
+                        <div class="stat-chip"><span class="stat-name">INSIGHT IQ</span><span class="stat-val">93</span></div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card" data-origin-arc="author" role="button" tabindex="0" aria-expanded="false">
+            <div class="click-open-badge" aria-hidden="true">CLICK TO OPEN FILE</div>
+
+            <img src="assets/author.png" alt="Author">
+            <h3>The Author Arc</h3>
+            <p>
+                Storytelling through books,
+                design and creative projects.<br>
+                Books: An Aisle of Blood, Eventide(launching soon)
+            </p>
+
+            <div class="origin-file" aria-hidden="true">
+                <div class="file-header">
+                    <span class="file-label">CLASSIFIED FILE</span>
+                    <span class="file-issue">FILE: AUTHOR-04</span>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">FUN FACT</div>
+                    <p class="file-text">
+                        Every chapter is treated like a page turn-timing, tension, and a final reveal.
+                    </p>
+                </div>
+
+                <div class="file-section">
+                    
+                    <p class="file-text">
+                        
+                    </p>
+                </div>
+
+                <div class="file-section">
+                    <div class="comic-subtitle">STORY STATS</div>
+                    <div class="stats-grid">
+                        <div class="stat-chip"><span class="stat-name">PLOT POWER</span><span class="stat-val">94</span></div>
+                        <div class="stat-chip"><span class="stat-name">CHARACTER VOICE</span><span class="stat-val">91</span></div>
+                        <div class="stat-chip"><span class="stat-name">WORLD-BUILDING</span><span class="stat-val">88</span></div>
+                        <div class="stat-chip"><span class="stat-name">STORY SPARK</span><span class="stat-val">95</span></div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- ==========================
+     SKILLS SECTION
+========================== -->
+
+<section class="skills">
+
+    <h2>SUPER POWERS</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Blender</div>
+        <div class="skill-card">Full Stack Development</div>
+        <div class="skill-card">Graphic Design</div>
+        <div class="skill-card">Canva</div>
+        <div class="skill-card">Figma</div>
+        <div class="skill-card">Pandas</div>
+        <div class="skill-card">Matplotlib</div>
+        <div class="skill-card">AI / ML</div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     PROJECTS SECTION
+========================== -->
+
+<section class="projects">
+
+    <h2>MISSIONS COMPLETED</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card" data-stack="Python, Port Scanning, Vulnerability Analysis">
+
+            <h3>Issue #001</h3>
+
+            <h2>Vulnerability Scanner</h2>
+
+            <p>
+                Python-based security scanner
+                for port and vulnerability analysis.
+            </p>
+
+            
+
+            <div class="project-stack" aria-hidden="true">
+              Tech Stack:<br> Python
+            </div>
+
+        </div>
+
+        <div class="project-card" data-stack="Python, OpenCV">
+
+            <h3>Issue #002</h3>
+
+            <h2>Shape Detection tool</h2>
+
+            <p>
+                Detects shape of objects using Python and OpenCV
+            </p>
+
+            
+
+            <div class="project-stack" aria-hidden="true">
+              Tech Stack:<br> Python, OpenCV
+            </div>
+
+        </div>
+
+        <div class="project-card" data-stack="HTML, CSS, JavaScript">
+
+            <h3>Issue #003</h3>
+
+            <h2>Navyra: Ship Tracker</h2>
+
+            <p>
+                A software to track the ship routes and reroute them to safe routes in times of crisis
+            </p>
+
+            
+
+            <div class="project-stack" aria-hidden="true">
+              Tech Stack:<br> HTML, CSS, JavaScript, Linear Regression Model, Leaflet
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     CONTACT SECTION
+========================== -->
+
+<section class="contact" id="contact">
+  <h2>CONTACT HQ</h2>
+
+  <p>
+      Have a project in mind?
+      Send me a message.
+  </p>
+
+  <form
+      action="https://formspree.io/f/mwvjrapb"
+      method="POST"
+      class="contact-form"
+      id="contactForm"
+  >
+      <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+      >
+
+      <input
+          type="Phone No."
+          name="Phone No."
+          placeholder="Your phone no."
+          required
+      >
+
+      <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="6"
+          required
+      ></textarea>
+
+      <button type="submit">
+          SEND MESSAGE
+      </button>
+  </form>
+
+  <!---for mobile version-->
+
+<div class="mobile-socials">
+
+    <a href="YOUR_LINKEDIN">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="YOUR_GITHUB">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="YOUR_INSTAGRAM">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:saniawrk72@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+
+  <!-- Hidden popup, shown after successful submit -->
+  <div id="comicPopup" class="comic-popup" aria-live="polite" aria-atomic="true" hidden>
+    <div class="comic-popup-inner">
+      <div class="comic-popup-title">TRANSMISSION RECEIVED!</div>
+      <div class="comic-popup-body">Your message is on its way to HQ. Redirecting…</div>
+      <button type="button" id="comicPopupOk" class="comic-popup-ok">OK</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================
+     ACHIEVEMENT TOAST (MOOD)
+========================== -->
+<div
+  id="comicAchievementToast"
+  class="comic-achievement-toast"
+  hidden
+  aria-live="polite"
+  aria-atomic="true"
+>
+  <div class="comic-achievement-toast-inner">
+    <div class="comic-achievement-trophy" aria-hidden="true">🏆</div>
+    <div class="comic-achievement-text">
+      <div class="comic-achievement-title">🏆 Playing With My Emotions, Huh!?</div>
+      <div class="comic-achievement-desc">You tried every version of Sania.</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
