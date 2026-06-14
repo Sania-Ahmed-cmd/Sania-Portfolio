@@ -517,7 +517,7 @@ max-height: none;
 .file-issue {
     font-family: Impact, Arial, sans-serif;
     font-weight: 900;
-    border: 4px solid #000;
+    border: 2px solid #000;
     background: #fff;
     padding: 8px 10px;
     box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.22);
@@ -965,11 +965,11 @@ max-height: none;
 
 @media screen and (max-width: 480px){
     .super-powers,
-    .skills{ padding: 90px 16px; }
+    .skills{ padding: 90px 1px; }
 
     .super-powers-title{ font-size: 2.6rem; margin-bottom: 28px; }
 
-    .power-badges{ gap: 10px; }
+    .power-badges{ gap: 5px; }
 
     .power-badge{ font-size: 1rem; }
 
