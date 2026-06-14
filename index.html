@@ -418,100 +418,267 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
      SKILLS SECTION
 ========================== -->
 
-<section class="skills">
+<section class="skills super-powers" id="super-powers">
+    <h2 class="super-powers-title">SUPER POWERS</h2>
 
-    <h2>SUPER POWERS</h2>
+    <div class="super-powers-layout">
+        <!-- LEFT: Stats + collectible power badges -->
+        <div class="super-powers-left">
+            <div class="issue-badge">SPECIAL ISSUE</div>
 
-    <div class="skills-grid">
+            <div class="creator-meta">
+                <div class="meta-line">
+                    <span class="meta-label">Character</span>
+                    <span class="meta-value">SANIA</span>
+                </div>
+                <div class="meta-line">
+                    <span class="meta-label">Hero Title</span>
+                    <span class="meta-value">THE CREATOR</span>
+                </div>
+            </div>
 
-        <div class="skill-card">Python</div>
-        <div class="skill-card">C</div>
-        <div class="skill-card">C++</div>
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Blender</div>
-        <div class="skill-card">Full Stack Development</div>
-        <div class="skill-card">Graphic Design</div>
-        <div class="skill-card">Canva</div>
-        <div class="skill-card">Figma</div>
-        <div class="skill-card">Pandas</div>
-        <div class="skill-card">Matplotlib</div>
-        <div class="skill-card">AI / ML</div>
+            <div class="power-badges" aria-label="Collectible power badges">
+                <div class="power-badge">⚡ Python</div>
+                <div class="power-badge">⚡ C</div>
+                <div class="power-badge">⚡ C++</div>
+                <div class="power-badge">⚡ JavaScript</div>
+                <div class="power-badge">⚡ Full Stack</div>
+                <div class="power-badge">⚡ AI/ML</div>
+                <div class="power-badge">⚡ Graphic Design</div>
+                <div class="power-badge">⚡ Figma</div>
+                <div class="power-badge">⚡ Canva</div>
+                <div class="power-badge">⚡ Blender</div>
+            </div>
 
+            <div class="small-stats">
+                <div class="small-stat">
+                    <div class="small-stat-label">POWER</div>
+                    <div class="small-stat-value">98</div>
+                </div>
+                <div class="small-stat">
+                    <div class="small-stat-label">CREATOR SKILL</div>
+                    <div class="small-stat-value">95</div>
+                </div>
+                <div class="small-stat">
+                    <div class="small-stat-label">STACK CONTROL</div>
+                    <div class="small-stat-value">92</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Featured trading card -->
+        <div class="super-powers-right">
+            <article class="super-card" aria-label="Superhero trading card">
+                <div class="super-card__frame" aria-hidden="true"></div>
+
+                <div class="super-card__top">
+                    <div class="super-card__tag">SPECIAL ISSUE</div>
+                    <div class="super-card__rarity">RARITY: LEGENDARY</div>
+                </div>
+
+                <div class="super-card__content">
+                    <div class="super-card__image-wrap" aria-hidden="true">
+                      
+                        <img class="super-card__image" src="assets/supergirl.png" alt="Sania the Creator" />
+                    </div>
+
+                    <div class="super-card__text">
+                        <div class="super-card__name">SANIA</div>
+                        <div class="super-card__title">THE CREATOR</div>
+
+                        <div class="super-card__stats">
+                            <div class="card-stat">
+                                <div class="card-stat-label">FOCUS</div>
+                                <div class="card-stat-value">93</div>
+                            </div>
+                            <div class="card-stat">
+                                <div class="card-stat-label">STYLE</div>
+                                <div class="card-stat-value">97</div>
+                            </div>
+                            <div class="card-stat">
+                                <div class="card-stat-label">IQ</div>
+                                <div class="card-stat-value">94</div>
+                            </div>
+                        </div>
+
+                        <div class="super-card__power-label">POWER SIG: CODE • DESIGN • MAGIC</div>
+                    </div>
+                </div>
+
+                <div class="super-card__bottom" aria-hidden="true">
+                 
+                </div>
+            </article>
+        </div>
     </div>
-
 </section>
 
 <!-- ==========================
-     PROJECTS SECTION
+     PROJECTS SECTION (TRADING CARDS)
 ========================== -->
 
-<section class="projects">
+<section class="projects projects-cards" id="missions-completed">
 
-    <h2>MISSIONS COMPLETED</h2>
+    <h2 class="projects-title">MISSIONS COMPLETED</h2>
 
-    <div class="project-grid">
+    <div class="projects-binder">
 
-        <div class="project-card" data-stack="Python, Port Scanning, Vulnerability Analysis">
+        <!-- Card 1 -->
+        <article class="project-card-tc" data-rarity="LEGENDARY" style="--rot:-3.5deg;">
+            <div class="tc-glare" aria-hidden="true"></div>
+            <div class="tc-bg" aria-hidden="true"></div>
 
-            <h3>Issue #001</h3>
+            <header class="tc-header">
+                <div class="tc-issue">
+                    <span class="tc-issue__label">ISSUE #001</span>
+                </div>
 
-            <h2>Vulnerability Scanner</h2>
+                <div class="tc-rarity">
+                    <span class="tc-rarity__icon" aria-hidden="true">◆</span>
+                    <span class="tc-rarity__text">LEGENDARY</span>
+                </div>
+            </header>
 
-            <p>
-                Python-based security scanner
-                for port and vulnerability analysis.
-            </p>
+            <div class="tc-body">
+                <div class="tc-art" aria-hidden="true">
+                    <span class="tc-art__badge">𖢥</span>
+                    <div class="tc-art__frame" aria-hidden="true"></div>
+                </div>
 
-            
+                <div class="tc-title-area">
+                    <h3 class="tc-name">Vulnerability Scanner</h3>
+                    <div class="tc-sub">Python-based security scanner</div>
 
-            <div class="project-stack" aria-hidden="true">
-              Tech Stack:<br> Python
+                    <div class="tc-frame" aria-hidden="true"></div>
+                </div>
             </div>
 
-        </div>
+            <footer class="tc-footer">
+                <p class="tc-desc">Port scanning + vulnerability analysis.
+                    Built to catch the hidden stuff.</p>
 
-        <div class="project-card" data-stack="Python, OpenCV">
+                <div class="tc-stack" aria-label="Tech stack">
+                    <span class="tc-chip">Python</span>
+                </div>
 
-            <h3>Issue #002</h3>
+                <div class="tc-stats" aria-label="Card stats">
+                    <div class="tc-stat"><span class="tc-stat__k">Power</span><span class="tc-stat__v">92</span></div>
+                    <div class="tc-stat"><span class="tc-stat__k">Impact</span><span class="tc-stat__v">88</span></div>
+                  <br><br>
+                </div>
 
-            <h2>Shape Detection tool</h2>
+                <div class="tc-meta">
+                    <span class="tc-first">FIRST EDITION</span>
+                    <span class="tc-serial">SN-001/003</span>
+                </div>
+            </footer>
+        </article>
 
-            <p>
-                Detects shape of objects using Python and OpenCV
-            </p>
+        <!-- Card 2 -->
+        <article class="project-card-tc" data-rarity="EPIC" style="--rot:2.8deg;">
+            <div class="tc-glare" aria-hidden="true"></div>
+            <div class="tc-bg" aria-hidden="true"></div>
 
-            
+            <header class="tc-header">
+                <div class="tc-issue">
+                    <span class="tc-issue__label">ISSUE #002</span>
+                </div>
 
-            <div class="project-stack" aria-hidden="true">
-              Tech Stack:<br> Python, OpenCV
+                <div class="tc-rarity">
+                    <span class="tc-rarity__icon" aria-hidden="true">◆</span>
+                    <span class="tc-rarity__text">EPIC</span>
+                </div>
+            </header>
+
+            <div class="tc-body">
+                <div class="tc-art" aria-hidden="true">
+                    <span class="tc-art__badge">⃤</span>
+                    <div class="tc-art__frame" aria-hidden="true"></div>
+                </div>
+
+                <div class="tc-title-area">
+                    <h3 class="tc-name">Shape Detection Tool</h3>
+                    <div class="tc-sub">Detects shape of objects</div>
+                    <div class="tc-frame" aria-hidden="true"></div>
+                </div>
             </div>
 
-        </div>
+            <footer class="tc-footer">
+                <p class="tc-desc">Vision-powered detection with clean output and fast inference feel.</p>
 
-        <div class="project-card" data-stack="HTML, CSS, JavaScript">
+                <div class="tc-stack" aria-label="Tech stack">
+                    <span class="tc-chip">Python</span>
+                    <span class="tc-chip">OpenCV</span>
+                </div>
 
-            <h3>Issue #003</h3>
+                <div class="tc-stats" aria-label="Card stats">
+                    <div class="tc-stat"><span class="tc-stat__k">Accuracy</span><span class="tc-stat__v">94</span></div>
+                    <div class="tc-stat"><span class="tc-stat__k">Vision</span><span class="tc-stat__v">90</span></div>
+                    <br><br><br>
+                </div>
 
-            <h2>Navyra: Ship Tracker</h2>
+                <div class="tc-meta">
+                    <span class="tc-first">FIRST EDITION</span>
+                    <span class="tc-serial">SN-002/003</span>
+                </div>
+            </footer>
+        </article>
 
-            <p>
-                A software to track the ship routes and reroute them to safe routes in times of crisis
-            </p>
+        <!-- Card 3 -->
+        <article class="project-card-tc" data-rarity="RARE" style="--rot:-1.4deg;">
+            <div class="tc-glare" aria-hidden="true"></div>
+            <div class="tc-bg" aria-hidden="true"></div>
 
-            
+            <header class="tc-header">
+                <div class="tc-issue">
+                    <span class="tc-issue__label">ISSUE #003</span>
+                </div>
 
-            <div class="project-stack" aria-hidden="true">
-              Tech Stack:<br> HTML, CSS, JavaScript, Linear Regression Model, Leaflet
+                <div class="tc-rarity">
+                    <span class="tc-rarity__icon" aria-hidden="true">◆</span>
+                    <span class="tc-rarity__text">RARE</span>
+                </div>
+            </header>
+
+            <div class="tc-body">
+                <div class="tc-art" aria-hidden="true">
+                    <span class="tc-art__badge">_𓊝_</span>
+                    <div class="tc-art__frame" aria-hidden="true"></div>
+                </div>
+
+                <div class="tc-title-area">
+                    <h3 class="tc-name">Navyra: Ship Tracker</h3>
+                    <div class="tc-sub">Route tracking + reroute safety</div>
+                    <div class="tc-frame" aria-hidden="true"></div>
+                </div>
             </div>
 
-        </div>
+            <footer class="tc-footer">
+                <p class="tc-desc">A crisis-time tracker that helps reroute ships to safer lanes.</p>
 
+                <div class="tc-stack" aria-label="Tech stack">
+                    <span class="tc-chip">HTML</span>
+                    <span class="tc-chip">CSS</span>
+                    <span class="tc-chip">JavaScript</span>
+                </div>
+
+                <div class="tc-stats" aria-label="Card stats">
+                    <div class="tc-stat"><span class="tc-stat__k">Power</span><span class="tc-stat__v">86</span></div>
+                    <div class="tc-stat"><span class="tc-stat__k">Impact</span><span class="tc-stat__v">84</span></div>
+                   <br><br>
+                </div>
+
+                <div class="tc-meta">
+                    <span class="tc-first">FIRST EDITION</span>
+                    <span class="tc-serial">SN-003/003</span>
+                </div>
+            </footer>
+        </article>
 
     </div>
 
 </section>
+
 
 
 
