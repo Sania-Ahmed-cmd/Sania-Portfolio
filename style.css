@@ -321,6 +321,12 @@ body {
   }
 }
 
+/* Prevent any accidental horizontal overflow on small screens */
+@media (max-width: 768px) {
+  body { overflow-x: hidden; }
+}
+
+
 /* ==========================
    ABOUT SECTION
 ========================== */
@@ -435,8 +441,9 @@ body {
 
 /* When open, blur the background content inside the same card so the popup reads clearly */
 .about-card.is-open {
-    --origin-blur: 1000px;
+    --origin-blur: 8px;
 }
+
 
 .about-card.is-open > img,
 .about-card.is-open > h3,
@@ -920,10 +927,11 @@ body {
     }
 
     .project-card{
-        width:120%;
+        width:100%;
         max-width:400px;
         margin:0 auto;
     }
+
 
     .project-card h2{
         font-size:2.5rem;
@@ -940,4 +948,21 @@ body {
         text-align:center;
     }
 
+}
+
+/* Desktop remains unchanged */
+
+@media (max-width: 768px) {
+  .comic-title {
+    font-size: 3rem;
+  }
+
+  .mood-badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .issue-box {
+    transform: scale(0.85);
+  }
 }
