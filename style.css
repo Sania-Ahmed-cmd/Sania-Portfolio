@@ -315,10 +315,13 @@ html, body {
   }
 
 
+
+
   .hero-content h1 {
-    font-size: 3.1rem;
-    line-height: 0.95;
+    font-size: 3.5rem;
+    line-height: 0.9;
   }
+
 
 
   .hero-content p {
