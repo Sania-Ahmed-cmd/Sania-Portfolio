@@ -14,12 +14,12 @@ cards.forEach(card => {
   card.addEventListener("mouseenter", () => {
     // Don't fight the open/closed dossier transform.
     if (card.classList.contains('is-open')) return;
-    card.style.transform = "rotate(-2deg) translateY(-10px)";
+    card.style.transform = "translateY(-10px)";
   });
 
   card.addEventListener("mouseleave", () => {
     if (card.classList.contains('is-open')) return;
-    card.style.transform = "rotate(0deg) translateY(0px)";
+    card.style.transform = "translateY(0px)";
   });
 });
 
