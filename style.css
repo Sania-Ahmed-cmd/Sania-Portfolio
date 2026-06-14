@@ -601,8 +601,9 @@ max-height: none;
         padding: 7px 9px;
     }
 
-    .origin-file {
+.origin-file {
         max-height: 560px;
+        transform: translateX(-14px) translateY(-6px);
     }
 
     .stats-grid {
