@@ -1430,12 +1430,11 @@ max-height: none;
   pointer-events: none;
 }
 
-.comic-achievement-toast.is-showing{
+
   .comic-achievement-toast.is-showing{
-    animation:
-        comicAchievementSlideIn 240ms ease-out forwards;
+    animation: comicAchievementSlideIn 340ms ease-out forwards;
 }
-}
+
 
 @keyframes comicAchievementSlideIn{
   0%{ transform: translate(18px, 26px); opacity: 0; }
